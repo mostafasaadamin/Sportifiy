@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context="com.work.unknown.sportifiy.Notification.notification">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Notification"
+        android:layout_marginTop="10dp"
+        android:textColor="#57edc1"
+        android:textSize="25sp"
+        android:id="@+id/rr"
+        android:background="@drawable/headerback"
+        android:gravity="center"
+        />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="80dp"
+        android:id="@+id/notyfme"
+        android:visibility="invisible"
+        android:layout_height="80dp"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/darkRed"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rr"
+        android:layout_marginTop="10dp"
+        android:id="@+id/notifcation_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

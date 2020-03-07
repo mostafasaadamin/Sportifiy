@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.work.unknown.sportifiy.Details.SearchMatch">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/headerback"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Searching For Game"
+            android:textSize="25sp"
+
+            android:layout_centerInParent="true"
+            android:textColor="#57edc1"
+            />
+    </RelativeLayout>
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:src="@drawable/logo"
+     android:alpha=".2"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select The date: "
+                android:textColor="#57edc1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+
+                ></TextView>
+            <Spinner
+                android:id="@+id/selectdate"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:layout_below="@+id/select"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/searcheditback"
+                />
+            <CheckBox
+                android:id="@+id/flecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flexiable"
+                android:textColor="#57edc1"
+                android:textSize="20dp"
+                android:layout_below="@+id/selectdate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="22dp"
+                />
+
+            <TextView
+                android:id="@+id/sel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select The Area: "
+                android:textColor="#57edc1"
+                android:layout_below="@+id/flecheck"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                />
+
+            <Spinner
+                android:id="@+id/selectArea"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:entries="@array/game_type"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/searcheditback"
+                android:layout_below="@+id/sel"
+                />
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select The Game:"
+                android:textColor="#57edc1"
+                android:layout_below="@+id/selectArea"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="60dp"
+                />
+            <Spinner
+                android:id="@+id/selectGame"
+                android:layout_width="270dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="45dp"
+                android:entries="@array/game_type"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/searcheditback"
+                android:layout_below="@+id/game"
+
+                />
+           <CheckBox
+                android:id="@+id/Malecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#57edc1"
+                android:textSize="20dp"
+                android:layout_below="@+id/selectGame"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="60dp"
+                />
+
+            <CheckBox
+                android:id="@+id/Femalecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#57edc1"
+                android:textSize="20dp"
+                android:layout_below="@+id/selectGame"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="65dp"
+                android:layout_marginTop="22dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Femalecheck"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Search"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:id="@+id/searchformatches"
+                android:background="@drawable/signupback"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

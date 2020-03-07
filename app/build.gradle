@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.0"
+    defaultConfig {
+        applicationId "com.work.unknown.sportifiy"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        // multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "google_maps_api_key", "AIzaSyBhhpxs_ZMuOn94VlTi0HtEW0ku5n8xiF0"
+        }
+        debug {
+            resValue "string", "google_maps_api_key", "AIzaSyDiO-fJOt078wTQKNqt_nosjBCHDf-KaW0"
+        }
+
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://dl.bintray.com/hani-momanii/maven" }
+    maven { url 'https://maven.google.com' }
+    maven { url "https://jitpack.io" }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //  implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.tapadoo.android:alerter:2.0.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-auth:11.0.2'
+    implementation 'com.google.firebase:firebase-database:11.0.2'
+    implementation 'com.google.firebase:firebase-storage:11.0.2'
+    implementation 'com.google.android.gms:play-services-maps:11.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.facebook.android:facebook-android-sdk:4.14.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.rom4ek:arcnavigationview:1.0.3'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'pub.devrel:easypermissions:1.1.3'
+    implementation 'com.github.florent37:diagonallayout:1.0.7'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.google.android.gms:play-services-location:11.0.2'
+    implementation 'com.github.varunest:sparkbutton:1.0.5'
+    implementation 'com.google.android.gms:play-services-places:11.0.2'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+}
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

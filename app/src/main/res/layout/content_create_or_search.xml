@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.work.unknown.sportifiy.Details.CreateOrSearch">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/logo"
+            android:scaleType="centerCrop"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo"
+            />
+    <Button
+        android:id="@+id/CreateMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="CreateMAtchbyuser"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/signupback"
+        android:text="create Match"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CreateMatch"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:text="Search"
+        android:onClick="SearchMatch"
+        android:id="@+id/Search"
+        android:textSize="20sp"
+        android:textColor="#57edc1"
+        android:background="@drawable/loginback"
+        />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+app:cardBackgroundColor="#fff"
+android:layout_margin="10dp"
+android:elevation="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/cancelnotify"-->
+        <!--android:background="@drawable/cancel"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="15dp"-->
+
+        <!--/>-->
+    <com.google.android.gms.maps.MapView
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/notifacationmap"
+        android:layout_width="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_height="150dp"
+        map:liteMode="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sorry your request has been rejected"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/notifacationmap"
+        android:id="@+id/Matchresponse"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="12/8/2017 9Am"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/notifacationmap"
+        android:id="@+id/curreentTime"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+         android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>
+</android.support.v7.widget.CardView>

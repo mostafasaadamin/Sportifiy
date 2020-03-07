@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:theme="@style/AppTheme2"
+    tools:context="com.work.unknown.sportifiy.MainActivity">
+<ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="230dp"
+     android:id="@+id/logo"
+     android:src="@drawable/logo"
+
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:text="Sign in "
+        android:layout_marginBottom="30dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:onClick="SignIN"
+        android:id="@+id/Signin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/bn"
+        android:text="Create account"
+        android:layout_marginBottom="30dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:onClick="Signup"
+        android:id="@+id/Signup"
+        />
+
+    <Button
+        android:id="@+id/FacebookSign"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#3b5999"
+        android:drawableLeft="@drawable/facebook"
+        android:text="sign in using facebook"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/FacebookSign"
+        >
+
+        <Button
+            android:id="@+id/GoogleSign"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#da4f41"
+            android:drawableLeft="@drawable/plus"
+            android:paddingLeft="10dp"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/TwiterSign"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/GoogleSign"
+            android:background="#55acef"
+            android:drawableLeft="@drawable/twitter"
+            android:paddingLeft="10dp"
+            android:text="Twitter"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+<View
+    android:layout_width="1dp"
+    android:layout_height="40dp"
+    android:background="#fff"
+    android:id="@+id/bn"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="25dp"
+    android:layout_toEndOf="@+id/Signin"
+   android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+</View>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatactivity"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.work.unknown.sportifiy.Chating.chat">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="60dp"
+        android:id="@+id/chatme"
+        android:visibility="visible"
+        android:layout_height="60dp"
+        app:indicatorName="LineScalePulseOutRapidIndicator"
+        android:layout_centerInParent="true"
+        app:indicatorColor="#6aace2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6aace2"
+        android:text="28 septemprt"
+        android:layout_marginTop="0dp"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:id="@+id/rrp"
+        android:gravity="center"
+        />
+         <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rrp"
+        android:layout_above="@+id/bbb"
+        android:id="@+id/chatmessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bbb"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_action_name" />
+
+
+        <ImageView
+            android:id="@+id/submit_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/emojicon_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/submit_btn"
+            android:background="@drawable/sendback"
+            android:layout_toRightOf="@id/emoji_btn"
+           />
+
+
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

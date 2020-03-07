@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:alpha=".9"
+    android:layout_height="match_parent"
+    tools:context="com.work.unknown.sportifiy.Login.Login">
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#80ffffff"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:id="@+id/header"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign in to Sportify"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="25sp"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+<!--</RelativeLayout>-->
+    <android.support.v7.widget.AppCompatImageView
+    android:layout_width="320dp"
+    android:layout_height="130dp"
+    android:src="@drawable/logo"
+    android:id="@+id/lo"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="8dp"
+    android:scaleType="centerCrop"
+    android:layout_centerHorizontal="true"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/lo"
+        android:id="@+id/dd"
+        >
+        <EditText
+            android:id="@+id/LoginuserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/en"
+            android:paddingLeft="10dp"
+
+            android:hint="Username or Email"
+            android:drawablePadding="40dp"
+            />
+
+        <EditText
+            android:id="@+id/LoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/lock"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/LoginuserName"
+            android:hint="Password"
+            android:drawablePadding="40dp"
+            />
+
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/login"
+        android:layout_height="55dp"
+        android:layout_below="@+id/dd"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Log in"
+        android:textSize="20sp"
+        android:textColor="#419e83"
+        android:onClick="Loginprocess"
+        android:background="@drawable/loginback"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/login"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign up"
+        android:onClick="gotoSignup"
+        android:textSize="20sp"
+        android:id="@+id/Signupbutton"
+        android:textColor="#fff"
+        android:background="@drawable/signupback"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_margin="10dp"
+    android:background="#eeeeee"
+     android:id="@+id/last"
+    android:layout_below="@+id/Signupbutton"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+      android:layout_marginTop="10dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/lo"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/facebook"
+           android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/twitter"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/facebook"
+
+            />
+        <ImageView
+            android:id="@+id/GoogleSign"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/googlep"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/twitter"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

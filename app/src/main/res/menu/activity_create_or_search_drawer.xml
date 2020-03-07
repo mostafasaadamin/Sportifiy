@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/Followers"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Followers"/>
+        <item
+            android:id="@+id/Following"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Following"/>
+        <item
+            android:id="@+id/Notification"
+            android:icon="@drawable/ic_notifications_active_black_24dp"
+            android:title="Notification"/>
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting"/>
+    </group>
+    <item android:title="LogOut">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_keyboard_backspace_black_24dp"
+                android:title="LogOut"/>
+
+        </menu>
+    </item>
+</menu>

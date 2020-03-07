@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@drawable/cardbackground"
+        >
+        <!--<ImageView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:src="@drawable/navegationbarback"-->
+            <!--/>-->
+        <com.google.android.gms.maps.MapView
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="150dp"
+            map:liteMode="true" />
+
+        <View
+            android:layout_width="2dp"
+            android:background="#cbf3f5"
+            android:id="@+id/ln"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="7dp"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ln"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spot"
+                    android:layout_marginLeft="12dp"
+                    android:text="Match Name :"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loca"
+                    android:layout_below="@+id/spot"
+                    android:layout_marginLeft="12dp"
+                    android:text="Location :"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/datee"
+                    android:layout_below="@+id/loca"
+                    android:layout_marginLeft="12dp"
+                    android:text="Date :"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/place"
+                    android:layout_below="@+id/datee"
+                    android:layout_marginLeft="12dp"
+                    android:text="Place :"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/spot"
+                    android:id="@+id/sportvalue"
+                    android:layout_marginLeft="12dp"
+                    android:text="sport"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/loca"
+                    android:id="@+id/locationvalue"
+                    android:layout_below="@+id/sportvalue"
+                    android:layout_marginLeft="12dp"
+                    android:text="location"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/loca"
+                    android:id="@+id/datevalue"
+                    android:layout_below="@+id/locationvalue"
+                    android:layout_marginLeft="12dp"
+                    android:text="date"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/loca"
+                    android:id="@+id/placevalue"
+                    android:layout_below="@+id/datevalue"
+                    android:layout_marginLeft="12dp"
+                    android:text="Place"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locca"
+                    android:layout_below="@+id/place"
+                    android:layout_marginLeft="12dp"
+                    android:text="Admin :"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/loca"
+                    android:id="@+id/creatormatchvalue"
+                    android:layout_below="@+id/placevalue"
+                    android:layout_marginLeft="12dp"
+                    android:text="admin"
+                    android:textColor="@color/baserealseColor"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <com.varunest.sparkbutton.SparkButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/add_Match"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ln"
+             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            app:sparkbutton_activeImage="@drawable/add_on"
+            app:sparkbutton_inActiveImage="@drawable/add_off"
+            app:sparkbutton_iconSize="32dp"
+            app:sparkbutton_animationSpeed="1.5"
+            app:sparkbutton_primaryColor="@color/darkBlueGrey"
+            app:sparkbutton_secondaryColor="@color/darkGreen"
+            />
+        <com.varunest.sparkbutton.SparkButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/Love_Match"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/add_Match"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            app:sparkbutton_activeImage="@drawable/ic_heart_on"
+            app:sparkbutton_inActiveImage="@drawable/ic_heart_off"
+            app:sparkbutton_iconSize="32dp"
+            app:sparkbutton_animationSpeed="1.5"
+            app:sparkbutton_primaryColor="@color/darkBlueGrey"
+            app:sparkbutton_secondaryColor="@color/darkGreen"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context="com.work.unknown.sportifiy.Chating.List_of_available_users">
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="60dp"
+        android:id="@+id/showme"
+        android:visibility="visible"
+        android:layout_height="60dp"
+        app:indicatorName="LineScalePulseOutRapidIndicator"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/white"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:alpha=".3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Available players"
+        android:layout_marginTop="10dp"
+        android:textColor="#57edc1"
+        android:textSize="25sp"
+        android:id="@+id/rrp"
+        android:background="@drawable/headerback"
+        android:gravity="center"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rrp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/avrecycleview"
+        android:layout_height="match_parent" />
+</RelativeLayout>

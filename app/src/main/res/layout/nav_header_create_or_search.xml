@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.diagonallayout.DiagonalLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="160dp"
+app:diagonal_angle="5"
+android:id="@+id/diagonal"
+app:diagonal_position="bottom"
+app:diagonal_direction="left"
+>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:alpha=".7"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/imagefornav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernamefornav"
+        android:text="user name"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremailfornav"
+        android:text="example@gmail.com"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>
+</com.github.florent37.diagonallayout.DiagonalLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Sportfy</string>
+    <string name="facebook_app_id">167445600547549</string>
+    <string name="erro">Please Fill All info</string>
+    <string name="failed">Failed to register</string>
+    <string name="title_activity_create_or_search">Sportfy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pic_location">Map</string>
+    <string name="title_activity_location">Map</string>
+    <string-array name="game_type">
+        <item>football</item>
+        <item>Air Racing</item>
+        <item>Chess</item>
+        <item>Table tennis‎ </item>
+        <item>Amateur boxing</item>
+        <item>fishing</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>Volleyball</item>
+        <item>Cycling </item>
+        <item>walking</item>
+        <item>Swimming </item>
+        <item>Handball</item>
+        <item>Horse Racing </item>
+        <item>sqwash</item>
+
+    </string-array>
+    <string name="title_activity_user_location">Map</string>
+</resources>
